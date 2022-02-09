@@ -1,0 +1,193 @@
+.form {
+  width: 40%;
+}
+.form form .inputs {
+  margin-top: 35px;
+  background-color: #ffffff;
+  box-shadow: 10px 8px 6px 0 #edeef5;
+  border-radius: 10px;
+  position: relative;
+}
+.form form .inputs .input-con {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-bottom: 1px solid #f3f4f8;
+}
+.form form .inputs .input-con .label-f {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form form .inputs .input-con .label-f label {
+  font-size: 12px;
+  color: #7f86aa;
+}
+.form form .inputs .input-con .input-f input {
+  width: 100%;
+  font-family: "shabnam";
+  font-size: 12px;
+  color: #c3c6d5;
+  border: none;
+  padding: 0;
+}
+.form form .inputs .input-con .input-f input::placeholder {
+  opacity: 0.5;
+}
+.form form .inputs .input-con .input-f input:focus {
+  outline: none;
+}
+.form form .rf {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+}
+.form form .rf .remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.form form .rf .remember .container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2px 30px 0 0;
+  cursor: pointer;
+  font-size: 12px;
+  color: #7f86aa;
+}
+.form form .rf .remember .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form form .rf .remember .container input:checked ~ .checkmark {
+  background-color: #4570f5;
+}
+.form form .rf .remember .container input:checked ~ .checkmark::after {
+  display: block;
+}
+.form form .rf .remember .container .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #4570f5;
+  border-radius: 5px;
+}
+.form form .rf .remember .container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.form form .rf .forget {
+  flex: 1;
+  text-align: left;
+}
+.form form .rf .forget a {
+  font-size: 14px;
+  color: #7f86aa;
+}
+.form form .bt-f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
+.form form .bt-f a {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  font-family: "shabnam";
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 3px 20px 0 rgba(69, 112, 245, 0.3);
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form form .bt-f a:focus {
+  outline: none;
+}
+.form form .bt-f a:nth-child(1) {
+  color: #ffffff;
+  background-color: #4570f5;
+  border: none;
+}
+.form form .bt-f a:nth-child(1):hover {
+  background-color: #2c5ef7;
+}
+.form form .bt-f a:nth-child(2) {
+  color: #929db3;
+  border: solid 1px #d1d1d2;
+  margin-left: 0;
+}
+.form form .bt-f a:nth-child(2):hover {
+  background-color: #e0e0e4;
+}
+
+.pic-q {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.pic-q img {
+  width: 100%;
+}
+.pic-q::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  width: 247px;
+  height: 247px;
+  background-color: #f3f4f8;
+  border: 15px solid #edeef5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.pic-q::after {
+  content: "";
+  position: absolute;
+  top: 300px;
+  left: 305px;
+  width: 108px;
+  height: 108px;
+  box-shadow: 10px 10px 26px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #4570f5 5%, #8fa9f6);
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: "shabnam";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/font/Shabnam-FD.ttf") format("ttf");
+  src: url("../assets/font/Shabnam-FD.woff") format("woff");
+}
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 50px;
+  box-sizing: border-box;
+  font-family: "shabnam";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
