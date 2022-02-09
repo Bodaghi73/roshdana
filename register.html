@@ -13,11 +13,20 @@
 				<div class="inputs">
 					<div class="input-con">
 						<div class="label-f">
+							<label>نام و نام خانوادگی</label>
+							<img src="./assets/img/user.png" />
+						</div>
+						<div class="input-f">
+							<input type="text" placeholder="نام و نام خانوادگی خود را وارد کنید" />
+						</div>
+					</div>
+					<div class="input-con">
+						<div class="label-f">
 							<label>ایمیل</label>
 							<img src="./assets/img/mail.png" />
 						</div>
 						<div class="input-f">
-							<input type="email" placeholder="ایمیل خود را وارد کنید" />
+							<input type="text" placeholder="ایمیل خود را وارد کنید" v-model="model.email" />
 						</div>
 					</div>
 					<div class="input-con">
@@ -27,6 +36,15 @@
 						</div>
 						<div class="input-f">
 							<input type="password" placeholder="رمز عبور خود را وارد کنید" />
+						</div>
+					</div>
+					<div class="input-con">
+						<div class="label-f">
+							<label>تکرار رمز عبور</label>
+							<img src="./assets/img/lock.png" />
+						</div>
+						<div class="input-f">
+							<input type="password" placeholder="رمز عبور خود را مجدد وارد کنید" />
 						</div>
 					</div>
 				</div>
@@ -43,8 +61,8 @@
 					</div>
 				</div>
 				<div class="bt-f">
-					<a type="submit" class="signin">ورود</a>
-					<a href="./register.html" class="signup">ثبت نام</a>
+					<a type="submit" class="signup">ثبت نام</a>
+					<a href="./index.html" class="signin">ورود</a>
 				</div>
 			</form>
 		</div>
