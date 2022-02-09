@@ -1,0 +1,170 @@
+.form {
+    width: 40%;
+    form {
+
+        .inputs {
+            margin-top: 35px;
+            background-color: #ffffff;
+            box-shadow: 10px 8px 6px 0 #edeef5;
+            border-radius: 10px;
+            position: relative;
+
+            .input-con {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                border-bottom: 1px solid #f3f4f8;
+
+                .label-f {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    label {
+                        font-size: 12px;
+                        color: #7f86aa;
+                    }
+                }
+
+                .input-f {
+                    input {
+                        width: 100%;
+                        font-family: "shabnam";
+                        font-size: 12px;
+                        color: #c3c6d5;
+                        border: none;
+                        padding: 0;
+
+                        &::placeholder {
+                            opacity: 0.5;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rf {
+            display: flex;
+            align-items: center;
+            padding-top: 35px;
+
+            .remember {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex: 1;
+
+                .container {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    padding: 2px 30px 0 0;
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: #7f86aa;
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked~.checkmark {
+                            background-color: #4570f5;
+                        }
+
+                        &:checked~.checkmark {
+                            &::after {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #4570f5;
+                        border-radius: 5px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+
+                            left: 6px;
+                            top: 3px;
+                            width: 4px;
+                            height: 8px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+
+            .forget {
+                flex: 1;
+                text-align: left;
+
+                a {
+                    font-size: 14px;
+                    color: #7f86aa;
+                }
+            }
+        }
+
+        .bt-f {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 35px;
+
+            button {
+                font-family: "shabnam";
+                font-size: 16px;
+                border-radius: 5px;
+                box-shadow: 0 3px 20px 0 rgba(69, 112, 245, 0.3);
+                padding: 10px;
+                flex: 1;
+                margin-left: 10px;
+
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:nth-child(1) {
+                    color: #ffffff;
+                    background-color: #4570f5;
+                    border: none;
+
+                    &:hover {
+                        background-color: #2c5ef7;
+                    }
+                }
+
+                &:nth-child(2) {
+                    color: #929db3;
+                    border: solid 1px #d1d1d2;
+                    margin-left: 0;
+
+                    &:hover {
+                        background-color: #e0e0e4;
+                    }
+                }
+            }
+        }
+    }
+}
