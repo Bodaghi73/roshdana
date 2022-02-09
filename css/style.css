@@ -135,7 +135,38 @@
 }
 .form form .bt-f button:nth-child(2):hover {
   background-color: #e0e0e4;
-  font-size: 16px;
+}
+
+.pic-q {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.pic-q img {
+  width: 100%;
+}
+.pic-q::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  width: 247px;
+  height: 247px;
+  background-color: #f3f4f8;
+  border: 15px solid #edeef5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.pic-q::after {
+  content: "";
+  position: absolute;
+  top: 300px;
+  left: 305px;
+  width: 108px;
+  height: 108px;
+  box-shadow: 10px 10px 26px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #4570f5 5%, #8fa9f6);
+  border-radius: 50%;
 }
 
 body {
