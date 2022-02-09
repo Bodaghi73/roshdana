@@ -169,11 +169,19 @@
   border-radius: 50%;
 }
 
+@font-face {
+  font-family: "shabnam";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/font/Shabnam-FD.ttf") format("ttf");
+  src: url("../assets/font/Shabnam-FD.woff") format("woff");
+}
 body {
   direction: rtl;
   margin: 0;
   padding: 50px;
   box-sizing: border-box;
+  font-family: "shabnam";
   display: flex;
   justify-content: space-around;
   align-items: center;
