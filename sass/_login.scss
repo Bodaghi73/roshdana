@@ -131,15 +131,17 @@
             align-items: center;
             padding-top: 35px;
 
-            button {
+            a {
+                display: flex;
+                justify-content: center;
+                flex: 1;
                 font-family: "shabnam";
                 font-size: 16px;
                 border-radius: 5px;
                 box-shadow: 0 3px 20px 0 rgba(69, 112, 245, 0.3);
                 padding: 10px;
-                flex: 1;
                 margin-left: 10px;
-
+                text-decoration: none;
                 cursor: pointer;
 
                 &:focus {
@@ -174,7 +176,7 @@
     width: 400px;
     height: 400px;
     position: relative;
-    
+
 
     img {
         width: 100%;
